@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "export-data-options"
+version = "0.1.0"
+description = ""
+authors = ["kipparis <keepintine@gmail.com>"]
+readme = "README.md"
+packages = [{include = "export_data_options"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+pyarrow = "^10.0.1"
+fastparquet = "^2022.11.0"
+tables = "^3.7.0"
+dash = "^2.7.0"
+
+
+[tool.poetry.group.development.dependencies]
+ipython = "^8.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
